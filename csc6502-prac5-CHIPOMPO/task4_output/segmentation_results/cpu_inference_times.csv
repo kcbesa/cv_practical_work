@@ -1,0 +1,3 @@
+Image,DeepLabV3 CPU (seconds),Mask R-CNN CPU (seconds),People Detected
+street_scene,5.033,2.077,6
+people_walking,8.378,1.839,5
