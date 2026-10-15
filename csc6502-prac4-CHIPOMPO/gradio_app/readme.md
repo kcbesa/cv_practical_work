@@ -30,3 +30,6 @@ The explicit class mapping used by the application is:
 
 ```python
 classes = ["bikes", "cat", "cars", "dog"]
+
+The average inference time is 11.65 ms. The results indicate that the model performs inference quickly under the tested conditions, making it suitable for an interactive educational application. However, inference time measures the model's prediction process and does not necessarily represent the total time users experience, which may also include image uploading, preprocessing, server response and network latency.
+ For real deployment changes, I would prioritise validating the model on realistic, independent data, protecting uploaded images, verifying the dataset's exact licence and measuring the real response time of the hosted application.
