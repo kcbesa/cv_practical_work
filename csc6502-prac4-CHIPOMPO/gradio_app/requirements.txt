@@ -1,4 +1,6 @@
 gradio
+huggingface-hub>=0.33.5,<1.0
 torch
 torchvision
 Pillow
+numpy

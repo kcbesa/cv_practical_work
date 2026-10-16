@@ -6,5 +6,5 @@ colorTo: yellow
 sdk: gradio
 app_file: app.py
 pinned: false
-short_description: 'This model classifies blood cells into malaria parasitized or uninfected'
+short_description: 'model classifies cells as malaria parasitized or uninfected'
 ---

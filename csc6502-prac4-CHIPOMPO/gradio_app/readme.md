@@ -1,3 +1,9 @@
+---
+title: Your Application
+sdk: gradio
+app_file: app.py
+python_version: "3.12"
+---
 # Image Classification with Fine-Tuned MobileNetV3-Small
 
 ## Project Overview
@@ -11,7 +17,7 @@ This project implements image classification using a selected four-class image d
 
 A CNN trained from scratch was compared with a pretrained MobileNetV3-Small model using transfer learning. The MobileNetV3-Small model was first trained with its feature extractor frozen and was subsequently fine-tuned by unfreezing the final feature block.
 
-The fine-tuned MobileNetV3-Small model was exported as a PyTorch `state_dict` and deployed as an interactive Gradio web application on Hugging Face Spaces. The application accepts an uploaded image and returns the top-3 predicted classes together with their probabilities.
+The fine-tuned MobileNetV3-Small model was exported as a PyTorch `state_dict` and deployed as an interactive Gradio web application on Hugging Face Spaces (https://huggingface.co/spaces/kbesa/mobilenet-image-classifier). The application accepts an uploaded image and returns the top-3 predicted classes together with their probabilities.
 
 ---
 
@@ -33,4 +39,3 @@ The average inference time is 11.65 ms. The results indicate that the model perf
 
 ```python
 classes = ["bikes", "cat", "cars", "dog"]
-

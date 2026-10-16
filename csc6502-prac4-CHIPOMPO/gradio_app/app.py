@@ -11,7 +11,7 @@ import time
 ###################################
 
 # Explicit mapping: class1=0 → bikes, class2=1 → cat, class3=2 → cars, class4=3 → dog
-classes = ["bikes", "cat", "cars", "dog"]
+classes = ["bikes", "cars", "cat", "dog"]
 
 device = torch.device("cpu")
 
@@ -46,8 +46,8 @@ transform = transforms.Compose([
     transforms.Resize((224, 224)),
     transforms.ToTensor(),
     transforms.Normalize(
-        (0.485, 0.456, 0.406),
-        (0.229, 0.224, 0.225)
+    (0.5, 0.5, 0.5),
+    (0.5, 0.5, 0.5)
     )
 ])
 
